@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		609DD0E628B2673300AAC389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD0E528B2673300AAC389 /* AppDelegate.swift */; };
+		609DD0E828B2673300AAC389 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD0E728B2673300AAC389 /* SceneDelegate.swift */; };
+		609DD0EA28B2673300AAC389 /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD0E928B2673300AAC389 /* DrinksViewController.swift */; };
+		609DD0ED28B2673300AAC389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609DD0EB28B2673300AAC389 /* Main.storyboard */; };
+		609DD0EF28B2673400AAC389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 609DD0EE28B2673400AAC389 /* Assets.xcassets */; };
+		609DD0F228B2673400AAC389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 609DD0F028B2673400AAC389 /* LaunchScreen.storyboard */; };
+		609DD0FD28B2673400AAC389 /* EliqDrinkAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD0FC28B2673400AAC389 /* EliqDrinkAppTests.swift */; };
+		609DD10728B2673400AAC389 /* EliqDrinkAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD10628B2673400AAC389 /* EliqDrinkAppUITests.swift */; };
+		609DD10928B2673400AAC389 /* EliqDrinkAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD10828B2673400AAC389 /* EliqDrinkAppUITestsLaunchTests.swift */; };
+		609DD11B28B26CE800AAC389 /* DrinksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD11A28B26CE700AAC389 /* DrinksViewModel.swift */; };
+		609DD11D28B3AB4000AAC389 /* HttpRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD11C28B3AB4000AAC389 /* HttpRequestHandler.swift */; };
+		609DD12128B3BE4F00AAC389 /* DrinkItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD11F28B3BE4F00AAC389 /* DrinkItemTableViewCell.swift */; };
+		609DD12228B3BE4F00AAC389 /* DrinkItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 609DD12028B3BE4F00AAC389 /* DrinkItemTableViewCell.xib */; };
+		609DD12428B3DE3000AAC389 /* ListItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD12328B3DE3000AAC389 /* ListItemModel.swift */; };
+		609DD12728B3FEA200AAC389 /* CustomExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD12628B3FEA200AAC389 /* CustomExtensions.swift */; };
+		609DD12928B4DD8600AAC389 /* DrinkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD12828B4DD8600AAC389 /* DrinkDetailView.swift */; };
+		609DD12B28B4EE3700AAC389 /* GetDrinksResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD12A28B4EE3700AAC389 /* GetDrinksResponseDTO.swift */; };
+		609DD12D28B5257300AAC389 /* DrinkDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD12C28B5257300AAC389 /* DrinkDetailsModel.swift */; };
+		609DD12F28B5274400AAC389 /* DrinkDetailResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD12E28B5274400AAC389 /* DrinkDetailResponseDTO.swift */; };
+		609DD13128B527AF00AAC389 /* DrinkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD13028B527AF00AAC389 /* DrinkDetailViewModel.swift */; };
+		609DD13328B5539600AAC389 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609DD13228B5539600AAC389 /* LanguageModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		609DD0F928B2673400AAC389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 609DD0DA28B2673300AAC389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 609DD0E128B2673300AAC389;
+			remoteInfo = EliqDrinkApp;
+		};
+		609DD10328B2673400AAC389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 609DD0DA28B2673300AAC389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 609DD0E128B2673300AAC389;
+			remoteInfo = EliqDrinkApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		609DD0E228B2673300AAC389 /* EliqDrinkApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EliqDrinkApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		609DD0E528B2673300AAC389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		609DD0E728B2673300AAC389 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		609DD0E928B2673300AAC389 /* DrinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
+		609DD0EC28B2673300AAC389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		609DD0EE28B2673400AAC389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		609DD0F128B2673400AAC389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		609DD0F328B2673400AAC389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		609DD0F828B2673400AAC389 /* EliqDrinkAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EliqDrinkAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		609DD0FC28B2673400AAC389 /* EliqDrinkAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EliqDrinkAppTests.swift; sourceTree = "<group>"; };
+		609DD10228B2673400AAC389 /* EliqDrinkAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EliqDrinkAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		609DD10628B2673400AAC389 /* EliqDrinkAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EliqDrinkAppUITests.swift; sourceTree = "<group>"; };
+		609DD10828B2673400AAC389 /* EliqDrinkAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EliqDrinkAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		609DD11A28B26CE700AAC389 /* DrinksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewModel.swift; sourceTree = "<group>"; };
+		609DD11C28B3AB4000AAC389 /* HttpRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHandler.swift; sourceTree = "<group>"; };
+		609DD11F28B3BE4F00AAC389 /* DrinkItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkItemTableViewCell.swift; sourceTree = "<group>"; };
+		609DD12028B3BE4F00AAC389 /* DrinkItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrinkItemTableViewCell.xib; sourceTree = "<group>"; };
+		609DD12328B3DE3000AAC389 /* ListItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemModel.swift; sourceTree = "<group>"; };
+		609DD12628B3FEA200AAC389 /* CustomExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExtensions.swift; sourceTree = "<group>"; };
+		609DD12828B4DD8600AAC389 /* DrinkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailView.swift; sourceTree = "<group>"; };
+		609DD12A28B4EE3700AAC389 /* GetDrinksResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDrinksResponseDTO.swift; sourceTree = "<group>"; };
+		609DD12C28B5257300AAC389 /* DrinkDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailsModel.swift; sourceTree = "<group>"; };
+		609DD12E28B5274400AAC389 /* DrinkDetailResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailResponseDTO.swift; sourceTree = "<group>"; };
+		609DD13028B527AF00AAC389 /* DrinkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetailViewModel.swift; sourceTree = "<group>"; };
+		609DD13228B5539600AAC389 /* LanguageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		609DD0DF28B2673300AAC389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609DD0F528B2673400AAC389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609DD0FF28B2673400AAC389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		609DD0D928B2673300AAC389 = {
+			isa = PBXGroup;
+			children = (
+				609DD0E428B2673300AAC389 /* EliqDrinkApp */,
+				609DD0FB28B2673400AAC389 /* EliqDrinkAppTests */,
+				609DD10528B2673400AAC389 /* EliqDrinkAppUITests */,
+				609DD0E328B2673300AAC389 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		609DD0E328B2673300AAC389 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				609DD0E228B2673300AAC389 /* EliqDrinkApp.app */,
+				609DD0F828B2673400AAC389 /* EliqDrinkAppTests.xctest */,
+				609DD10228B2673400AAC389 /* EliqDrinkAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		609DD0E428B2673300AAC389 /* EliqDrinkApp */ = {
+			isa = PBXGroup;
+			children = (
+				609DD12528B3FE8D00AAC389 /* Utils */,
+				609DD11928B2682100AAC389 /* Services */,
+				609DD11828B2681600AAC389 /* Models */,
+				609DD11728B2680600AAC389 /* ViewModels */,
+				609DD11628B2679700AAC389 /* Views */,
+				609DD11528B2677C00AAC389 /* AppDelegates */,
+				609DD0EB28B2673300AAC389 /* Main.storyboard */,
+				609DD0EE28B2673400AAC389 /* Assets.xcassets */,
+				609DD0F028B2673400AAC389 /* LaunchScreen.storyboard */,
+				609DD0F328B2673400AAC389 /* Info.plist */,
+			);
+			path = EliqDrinkApp;
+			sourceTree = "<group>";
+		};
+		609DD0FB28B2673400AAC389 /* EliqDrinkAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				609DD0FC28B2673400AAC389 /* EliqDrinkAppTests.swift */,
+			);
+			path = EliqDrinkAppTests;
+			sourceTree = "<group>";
+		};
+		609DD10528B2673400AAC389 /* EliqDrinkAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				609DD10628B2673400AAC389 /* EliqDrinkAppUITests.swift */,
+				609DD10828B2673400AAC389 /* EliqDrinkAppUITestsLaunchTests.swift */,
+			);
+			path = EliqDrinkAppUITests;
+			sourceTree = "<group>";
+		};
+		609DD11528B2677C00AAC389 /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				609DD0E528B2673300AAC389 /* AppDelegate.swift */,
+				609DD0E728B2673300AAC389 /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		609DD11628B2679700AAC389 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				609DD11E28B3BE2600AAC389 /* Cells */,
+				609DD0E928B2673300AAC389 /* DrinksViewController.swift */,
+				609DD12828B4DD8600AAC389 /* DrinkDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		609DD11728B2680600AAC389 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				609DD11A28B26CE700AAC389 /* DrinksViewModel.swift */,
+				609DD13028B527AF00AAC389 /* DrinkDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		609DD11828B2681600AAC389 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				609DD12328B3DE3000AAC389 /* ListItemModel.swift */,
+				609DD12A28B4EE3700AAC389 /* GetDrinksResponseDTO.swift */,
+				609DD12C28B5257300AAC389 /* DrinkDetailsModel.swift */,
+				609DD12E28B5274400AAC389 /* DrinkDetailResponseDTO.swift */,
+				609DD13228B5539600AAC389 /* LanguageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		609DD11928B2682100AAC389 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				609DD11C28B3AB4000AAC389 /* HttpRequestHandler.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		609DD11E28B3BE2600AAC389 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				609DD11F28B3BE4F00AAC389 /* DrinkItemTableViewCell.swift */,
+				609DD12028B3BE4F00AAC389 /* DrinkItemTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		609DD12528B3FE8D00AAC389 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				609DD12628B3FEA200AAC389 /* CustomExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		609DD0E128B2673300AAC389 /* EliqDrinkApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 609DD10C28B2673400AAC389 /* Build configuration list for PBXNativeTarget "EliqDrinkApp" */;
+			buildPhases = (
+				609DD0DE28B2673300AAC389 /* Sources */,
+				609DD0DF28B2673300AAC389 /* Frameworks */,
+				609DD0E028B2673300AAC389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EliqDrinkApp;
+			productName = EliqDrinkApp;
+			productReference = 609DD0E228B2673300AAC389 /* EliqDrinkApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		609DD0F728B2673400AAC389 /* EliqDrinkAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 609DD10F28B2673400AAC389 /* Build configuration list for PBXNativeTarget "EliqDrinkAppTests" */;
+			buildPhases = (
+				609DD0F428B2673400AAC389 /* Sources */,
+				609DD0F528B2673400AAC389 /* Frameworks */,
+				609DD0F628B2673400AAC389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				609DD0FA28B2673400AAC389 /* PBXTargetDependency */,
+			);
+			name = EliqDrinkAppTests;
+			productName = EliqDrinkAppTests;
+			productReference = 609DD0F828B2673400AAC389 /* EliqDrinkAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		609DD10128B2673400AAC389 /* EliqDrinkAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 609DD11228B2673400AAC389 /* Build configuration list for PBXNativeTarget "EliqDrinkAppUITests" */;
+			buildPhases = (
+				609DD0FE28B2673400AAC389 /* Sources */,
+				609DD0FF28B2673400AAC389 /* Frameworks */,
+				609DD10028B2673400AAC389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				609DD10428B2673400AAC389 /* PBXTargetDependency */,
+			);
+			name = EliqDrinkAppUITests;
+			productName = EliqDrinkAppUITests;
+			productReference = 609DD10228B2673400AAC389 /* EliqDrinkAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		609DD0DA28B2673300AAC389 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					609DD0E128B2673300AAC389 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					609DD0F728B2673400AAC389 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 609DD0E128B2673300AAC389;
+					};
+					609DD10128B2673400AAC389 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 609DD0E128B2673300AAC389;
+					};
+				};
+			};
+			buildConfigurationList = 609DD0DD28B2673300AAC389 /* Build configuration list for PBXProject "EliqDrinkApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 609DD0D928B2673300AAC389;
+			productRefGroup = 609DD0E328B2673300AAC389 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				609DD0E128B2673300AAC389 /* EliqDrinkApp */,
+				609DD0F728B2673400AAC389 /* EliqDrinkAppTests */,
+				609DD10128B2673400AAC389 /* EliqDrinkAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		609DD0E028B2673300AAC389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609DD0F228B2673400AAC389 /* LaunchScreen.storyboard in Resources */,
+				609DD12228B3BE4F00AAC389 /* DrinkItemTableViewCell.xib in Resources */,
+				609DD0EF28B2673400AAC389 /* Assets.xcassets in Resources */,
+				609DD0ED28B2673300AAC389 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609DD0F628B2673400AAC389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609DD10028B2673400AAC389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		609DD0DE28B2673300AAC389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609DD12B28B4EE3700AAC389 /* GetDrinksResponseDTO.swift in Sources */,
+				609DD0EA28B2673300AAC389 /* DrinksViewController.swift in Sources */,
+				609DD0E628B2673300AAC389 /* AppDelegate.swift in Sources */,
+				609DD12D28B5257300AAC389 /* DrinkDetailsModel.swift in Sources */,
+				609DD12F28B5274400AAC389 /* DrinkDetailResponseDTO.swift in Sources */,
+				609DD0E828B2673300AAC389 /* SceneDelegate.swift in Sources */,
+				609DD13128B527AF00AAC389 /* DrinkDetailViewModel.swift in Sources */,
+				609DD12128B3BE4F00AAC389 /* DrinkItemTableViewCell.swift in Sources */,
+				609DD12928B4DD8600AAC389 /* DrinkDetailView.swift in Sources */,
+				609DD13328B5539600AAC389 /* LanguageModel.swift in Sources */,
+				609DD12728B3FEA200AAC389 /* CustomExtensions.swift in Sources */,
+				609DD12428B3DE3000AAC389 /* ListItemModel.swift in Sources */,
+				609DD11D28B3AB4000AAC389 /* HttpRequestHandler.swift in Sources */,
+				609DD11B28B26CE800AAC389 /* DrinksViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609DD0F428B2673400AAC389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609DD0FD28B2673400AAC389 /* EliqDrinkAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		609DD0FE28B2673400AAC389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				609DD10928B2673400AAC389 /* EliqDrinkAppUITestsLaunchTests.swift in Sources */,
+				609DD10728B2673400AAC389 /* EliqDrinkAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		609DD0FA28B2673400AAC389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 609DD0E128B2673300AAC389 /* EliqDrinkApp */;
+			targetProxy = 609DD0F928B2673400AAC389 /* PBXContainerItemProxy */;
+		};
+		609DD10428B2673400AAC389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 609DD0E128B2673300AAC389 /* EliqDrinkApp */;
+			targetProxy = 609DD10328B2673400AAC389 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		609DD0EB28B2673300AAC389 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				609DD0EC28B2673300AAC389 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		609DD0F028B2673400AAC389 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				609DD0F128B2673400AAC389 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		609DD10A28B2673400AAC389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		609DD10B28B2673400AAC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		609DD10D28B2673400AAC389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTFXUL8TCZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EliqDrinkApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Drink App";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amila.EliqDrinkApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		609DD10E28B2673400AAC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTFXUL8TCZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EliqDrinkApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Drink App";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amila.EliqDrinkApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		609DD11028B2673400AAC389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTFXUL8TCZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amila.EliqDrinkAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EliqDrinkApp.app/EliqDrinkApp";
+			};
+			name = Debug;
+		};
+		609DD11128B2673400AAC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTFXUL8TCZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amila.EliqDrinkAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EliqDrinkApp.app/EliqDrinkApp";
+			};
+			name = Release;
+		};
+		609DD11328B2673400AAC389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTFXUL8TCZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amila.EliqDrinkAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EliqDrinkApp;
+			};
+			name = Debug;
+		};
+		609DD11428B2673400AAC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTFXUL8TCZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.amila.EliqDrinkAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EliqDrinkApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		609DD0DD28B2673300AAC389 /* Build configuration list for PBXProject "EliqDrinkApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				609DD10A28B2673400AAC389 /* Debug */,
+				609DD10B28B2673400AAC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		609DD10C28B2673400AAC389 /* Build configuration list for PBXNativeTarget "EliqDrinkApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				609DD10D28B2673400AAC389 /* Debug */,
+				609DD10E28B2673400AAC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		609DD10F28B2673400AAC389 /* Build configuration list for PBXNativeTarget "EliqDrinkAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				609DD11028B2673400AAC389 /* Debug */,
+				609DD11128B2673400AAC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		609DD11228B2673400AAC389 /* Build configuration list for PBXNativeTarget "EliqDrinkAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				609DD11328B2673400AAC389 /* Debug */,
+				609DD11428B2673400AAC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 609DD0DA28B2673300AAC389 /* Project object */;
+}
