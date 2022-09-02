@@ -40,7 +40,7 @@ class DrinksViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func setupBinders(){
         
-        // Alert message subsccriber
+        // Alert message subscriber
         viewModel.$alertMessage
             .receive(on: DispatchQueue.main)
             .sink(receiveValue: { message in
@@ -49,14 +49,14 @@ class DrinksViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 }
             }).store(in: &cancellables)
         
-        // Drinks list subsccriber
+        // Drinks list subscriber
         viewModel.$drinks
             .receive(on: DispatchQueue.main)
             .sink(receiveValue: { drinks in
                 self.tableView.reloadData()
             }).store(in: &cancellables)
         
-        // loader subsccriber
+        // loader subscriber
         viewModel.$isLoading
             .receive(on: DispatchQueue.main)
             .sink(receiveValue: { isLoading in

@@ -54,7 +54,7 @@ struct DrinkDetailView: View {
                             .foregroundColor(.secondary)
                             .frame(maxWidth: .infinity, alignment: .leading)
                         
-                        Picker("Select a paint color", selection: $selection) {
+                        Picker("", selection: $selection) {
                             ForEach(viewModel.langArr, id: \.id) {
                                 Text($0.name)
                             }
